@@ -1,0 +1,31 @@
+/* -----------------------------------------
+   IMPORT GOOGLE FONT STYLE
+----------------------------------------- */
+
+
+
+/*-----------------Background-----------------*/
+
+.menu_hr, .menu_nav ul li .active_menu, .menu_nav ul li .active_menu:hover, .stratosfera_here a span, .cap-footer, .slider_item ul li a.active_item, .pager-active, .small-slider .pager-active, .plus,
+.cap-blog-title h1
+{background:#449355;}
+
+
+/*-----------------Border-----------------*/
+
+#menu ul ul li:first-child a:after, .pop-tags a:hover
+{border-right: 4px solid #449355;}
+
+.second-columns ul li:hover 
+{ border-bottom:thin solid #449355;}
+/*-----------------Font-Color-----------------*/
+
+#flexslider h4 span, #flexslider p a, .stratosfera_here a h4, .cap_button a:hover, .second-columns ul li a:hover, .third-columns li a h6:hover, 
+.cap_box_title h3, .blog-header b, .blog-header span a:hover, .blog-header span .active-blog, .cap-blog-read h1, .cap-blog-read ul li a:hover, .cap-blog-read ol li a:hover,
+.cap-blog-read-comment ul li a:hover, .pop-tags a:hover, .tabs-post ul li a:hover, .tabs-1-content a:hover, .filter li a:hover,  .filter li.current a
+
+{color:#449355; }
+
+/*border color*/
+.stratosfera_tabs .stratosfera_here a
+{ border-top-color:#449355;}

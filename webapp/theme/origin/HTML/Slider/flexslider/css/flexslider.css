@@ -1,0 +1,99 @@
+/*
+ * jQuery FlexSlider v1.8
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+ 
+ /* -----------------------------------------
+   CAPADOCIA SLIDER
+----------------------------------------- */
+
+#flexslider{ width:1067px;	min-height:494px; max-height:494px; }
+#flexslider h4 { position: relative; z-index:1; text-align:center; font-family: 'Economica', sans-serif; font-size:30px; font-weight:normal; color:#303030; padding-top:42px; }
+#flexslider h4 span { position:relative; z-index:1; color:#449355; }
+#flexslider p {
+	position:relative;
+	z-index:1; 
+	width:800px; 
+	text-align:center; 
+	color:#828282; 
+	font-family: 'Cuprum', sans-serif;
+	font-size:16px; 
+	line-height:22px;
+	margin:auto;
+}
+#flexslider p a { 
+	color:#449355; 
+	padding-right:13px;
+	-webkit-transition: all 0s ease-in-out;
+	-moz-transition: all 0s ease-in-out;
+	-ms-transition: all 0s ease-in-out;
+	-o-transition: all 0s ease-in-out;
+	transition: all 0s ease-in-out; 
+}
+#flexslider p a:hover {  background:url(../../../images/readmore.png) no-repeat right center; }
+
+#flexslider .fleximg { position:absolute; z-index:0; margin:-126px 0px 0px -4px;  text-align:center;}
+
+.stratosfera_tabs {
+	list-style: none;
+	padding: 0;
+	list-style: none;
+	width: 100%;
+	padding:0;
+	margin:0;
+	height:72px; 
+	background-color:#f8f8f8;
+}
+
+.stratosfera_tabs li span {
+	border-radius:50px; 
+	width:32px; 
+	height:32px;
+	-moz-border-radius:50px;
+	-webkit-border-radius:50px;
+	-khtml-border-radius:50px;
+	background:#313131;
+	float:left; 
+	text-align:center; 
+	color:#FFF; 
+	font-family:Arial, Helvetica, sans-serif; 
+	font-size:18px; 
+	line-height:32px; 
+	margin-top:18px; 
+	margin-left:20px; 
+	margin-right:16px;
+}
+
+.stratosfera_tabs li h4{ 
+	font-family:Arial, Helvetica, sans-serif; 
+	font-weight:normal; 
+	font-size:15px; 
+	color:#313131; 
+	margin-top:15px;  
+	text-shadow: 1px 1px 1px #f8f8f8;
+} 
+
+.stratosfera_tabs li p { color:#828282; font-family: 'Cuprum', sans-serif; font-size:14px; }
+
+
+.stratosfera_tabs li { float: left; width: 25%; padding:0; margin:0;  }
+.stratosfera_tabs li a { width: auto; height:67px; display:block; padding:0; margin:0; border-top:5px solid #e5e5e5;
+-webkit-box-shadow: inset 1px 0px 0px 0px #e5e5e5;
+box-shadow: inset 1px 0px 0px 0px #e5e5e5;}
+.stratosfera_tabs li a:hover { background:#efefef; text-decoration:none; margin:0; padding:0; }
+
+
+/* ACTÝVE */
+.stratosfera_tabs .stratosfera_here a { z-index:999; position:relative; border-top-color:#449355; background:#efefef; }
+.stratosfera_here a span { background-color:#449355;}
+.stratosfera_here a h4{ color:#449355;}
+ 
+ 
+.stratosfera_tabs .stratosfera_here a:hover{background:#efefef; z-index:999; position:relative;}
+.stratosfera {position: relative; list-style: none; overflow: hidden; width: 100%; padding: 0; margin: 0;}
+.stratosfera li {position: absolute; width: 100%; left: 0; top: 0; }
+

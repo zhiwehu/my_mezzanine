@@ -1,0 +1,9 @@
+#!/Users/jeffrey/Dev/project/python/my_mezzanine/env/bin/python
+# EASY-INSTALL-ENTRY-SCRIPT: 'Mezzanine==1.1.4','console_scripts','mezzanine-project'
+__requires__ = 'Mezzanine==1.1.4'
+import sys
+from pkg_resources import load_entry_point
+
+sys.exit(
+   load_entry_point('Mezzanine==1.1.4', 'console_scripts', 'mezzanine-project')()
+)

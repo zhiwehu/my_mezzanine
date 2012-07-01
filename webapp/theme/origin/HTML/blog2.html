@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+
+<!-- Set the viewport width to device width for mobile -->
+<meta name="viewport" content="width=device-width" />
+
+<title>Welcome to Capadocia</title>
+
+<!-- Included CSS Files -->
+<link rel="stylesheet" href="stylesheets/foundation.css">
+<link rel="stylesheet" href="stylesheets/app.css">
+<link rel="stylesheet" href="css/green.css">
+
+<!--[if lt IE 9]> <link rel="stylesheet" href="stylesheets/ie.css"> <![endif]-->
+<!--[if lt IE 9]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="javascripts/jquery-ui-1.8.20.custom.min.js"></script>
+<script src="http://bxslider.com/sites/default/files/jquery.bxSlider.min.js" type="text/javascript"></script>
+<script src="javascripts/general.js"></script>
+
+<script>
+    $(document).ready(function(){
+        //Examples of how to assign the ColorBox event to elements
+        $(".group1").colorbox({rel:'group1'});
+        $(".group2").colorbox({rel:'group2', transition:"fade"});
+        $(".group3").colorbox({rel:'group3', transition:"none", width:"75%", height:"75%"});
+        $(".group4").colorbox({rel:'group4', slideshow:true});
+        $(".ajax").colorbox();
+        $(".youtube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+        $(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
+        $(".inline").colorbox({inline:true, width:"50%"});
+        $(".callbacks").colorbox({
+            onOpen:function(){ alert('onOpen: colorbox is about to open'); },
+            onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
+            onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
+            onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
+            onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
+        });
+        
+        //Example of preserving a JavaScript event for inline calls.
+        $("#click").click(function(){ 
+            $('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+            return false;
+        });
+    });
+</script> 
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('.plus-button').click(function() {
+			$('.plus').slideToggle(200, function() {
+				$('.plus-button').toggleClass('up');
+			});
+		});
+
+	});
+</script>
+
+<script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
+</head>
+<body>
+
+
+<!-- CONTAINER -->
+<div class="container">
+	
+   <!-- BACKGORUND COLOR STYLE -->
+   <div class="cap-bg-color-top"></div>
+   <div class="cap-bg-color-bottom"></div>
+
+    <!-- HR BACKGORUN COLOR -->
+    <div class="row">
+            <div class="menu_hr"></div>	
+    </div> <!-- /.row -->
+
+    
+	<!-- MENU -->
+    <div class="plus-content">
+        <div class="plus">
+        	<h4>Why Support Us?</h4>
+            <p><b>Mauris dui massa,</b> pellentesque eget laoreet quis, semper sed risus. Ves tibulum fermentum massa vel magna laoreet lorem ipsum is simply dummy data tempus.</p>
+            <div class="cap_button"><a href="">All<span><img src="images/button_arrow23.png" alt=""/></span></a></div>
+            <div class="cap_button"><a href="">All<span><img src="images/button_arrow2.png" alt=""/></span></a></div>
+        </div>
+        <a href="#" class="plus-button" title=""></a>
+    </div>		
+    
+    <div class="row">
+        <div class="twelve columns">
+            <div class="menu_nav">
+                <ul id="menu">
+                    
+                    <!-- Home -->
+                    <li>
+                    	<a class="active_menu" href="index.html">Home</a>
+                    </li>
+                    
+                    <!-- About -->
+                    <li>
+                        <a href="about-us.html">About</a>  
+                    </li>
+                    
+                    <!-- Blog -->
+                    <li>
+                        <a href="#">Blog</a>
+                        <ul>
+                            <li>
+                            	<a href="">Blog Style One</a>
+                                <ul>
+                                    <li><a href="blog.html">Right Sidebar</a></li>
+                                   	<li><a href="blog2.html">Left Sidebar</a></li>
+                                </ul>
+                            </li>
+        
+                            <li><a href="">Blog Style Two</a>
+                                <ul>
+                                    <li><a href="blog3.html">Right Sidebar</a></li>
+                                   	<li><a href="blog4.html">Left Sidebar</a></li>
+                                </ul>
+                            </li>
+                            
+                            <li><a href="blog-read.html">Blog Read - Single Page</a></li>
+                        </ul>	
+                    </li>
+                    
+                    <!-- Work -->
+                    <li>
+                        <a href="#">Works</a>
+                        <ul>
+                            <li><a href="portfolio.html">Normal Works</a></li>
+                            <li><a href="portfolio2.html">Works Style Two</a></li>
+                            <li><a href="portfolio3.html">Works Style Three</a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Themes -->
+                    <li>
+                        <a href="#">Themes</a>
+                        <ul>
+                            <li>
+                            	<a href="">Home Page Style</a>
+                                <ul>
+                                    <li><a href="index.html">Index Style One</a></li>
+                                   	<li><a href="index2.html">Index Style Two</a></li>
+                                </ul>
+                            </li>
+        
+                            <li>
+                            	<a href="">Slider Style</a>
+                                <ul>
+                                    <li><a href="index.html">Slider Style One</a></li>
+                                   	<li><a href="slider-2.html">Slider Style Two</a></li>
+                                    <li><a href="slider-3.html">Slider Style Three</a></li>
+                                    <li><a href="slider-4.html">Slider Style Four</a></li>
+                                </ul>
+                            </li>
+                            
+                            <li>
+                            	<a href="">Shortcodes</a>
+                                <ul>
+                                    <li><a href="buttons.html">Buttons Archive</a></li>
+                                    <li><a href="diagram.html">Diagram Pie</a></li>
+                                    <li><a href="layouts.html">Theme Layouts</a></li>
+                                    <li><a href="tables.html">Tables</a></li>
+                                    <li><a href="tabs-alert.html">Tabs & Alerts Message</a></li>
+                                    <li><a href="video.html">Video Tutorial</a></li>
+                                </ul>
+                            </li>
+                            
+                            <li>
+                            	<a href="">Typography</a>
+                                <ul>
+                                    <li><a href="layouts.html">Theme Layouts</a></li>
+                                    <li><a href="page-full.html">Typography</a></li>
+                                </ul>
+                            </li>
+                        </ul>	
+                    </li>
+                    
+                    <!-- Pages -->
+                    <li>
+                        <a href="#">Pages</a>
+                        <ul>
+                            <li><a href="page-normal.html">Page Normal</a></li>
+                            <li><a href="page-normal-two.html">Page Normal Two</a></li>
+                            <li><a href="page-full.html">Page Full</a></li>
+                            <li><a href="page-full-two.html">Page Full Two</a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Contact -->
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul> <!-- /#menu -->
+                <div class="search">
+                        <input type="text" name=""  autocomplete="off" value="Search.."
+                        onfocus="if(this.value=='Search..')this.value='';this.select();"
+                        onBlur="if(this.value=='')this.value='Search..';"/>
+                </div><!--/.search-->
+			</div> <!-- /.menu_nav -->
+        </div> <!-- /.twelve columns -->
+    </div> <!-- /.row -->
+
+	<!-- LOGO -->
+    <div class="mrgn-t-45"></div>
+    <div class="row header">
+    	<div class="tree columns">
+   			<img src="images/logo.png" width="197" height="60" alt="" />
+        </div>
+        <div class="one columns">
+        	<p class="cp-header-line"></p>
+        </div>
+        <div class="five columns">
+        	<p class="cp-header-description">It’s perfect clean minimal theme!</p>
+        </div>
+        <div class="tree columns">
+        	<div class="cap-social">
+            	<ul>
+                    <li><a class="has-tip" data-width="60" title="Facebook" href=""><img src="images/facebook_icon.png"  alt="" /></a></li>
+                    <li><a class="has-tip" data-width="60" title="Twitter" href=""><img src="images/twitter_icon.png"  alt="" /></a></li>
+                    <li><a class="has-tip" data-width="60" title="Apple" href=""><img src="images/apple_icon.png" alt=""  /></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- AREA 1 -->
+    <div class="row">
+    	<div class="twelve columns">
+        	<div class="mrgn-t-28"></div>
+            <div class="bg-border">
+                <div class="blog-header">
+                    The <b>Blog US</b> Page
+                    <span><a href=""><img src="images/blog-home.png" alt=""/></a> <a href="">Home</a>  >  <a class="active-blog" href="">Blog Page</a></span>
+                </div>
+            </div>
+    	</div>
+    </div> <!-- /.row -->
+    
+    <!-- AREA 2 -->
+    <div class="row">
+    	
+        
+        <div class="three columns">
+        	
+            <!--1-->
+            <div class="mrgn-t-45"></div>
+            <div class="bg-border">
+                <div class="cap-blog-area-r">
+                    <div class="blog-social">
+                    	<a href=""><img src="images/blog-rss.png" alt=""/>13.480 <b>Rss</b> Subscribers</a>
+                        <a href=""><img src="images/blog-face.png" alt=""/>143.200 <b>Facebook</b> Fans</a>
+                        <a href=""><img src="images/blog-twit.png" alt=""/>9.800 <b>Twitter</b> Followers</a>
+                    </div>
+                </div> <!--/.cap-blog-area-->
+            </div><!-- /.bg-border -->
+            
+            <!--2-->
+            <div class="mrgn-t-45"></div>
+            <div class="bg-border">
+                <div class="cap-blog-area-r">
+                
+                
+					<div id="usual1"> 
+						<ul class="usual"> 
+    						<li><a href="#tab1" class="selected">Catagories</a></li> 
+    						<li><a href="#tab2">Archives</a></li> 
+  						</ul> 
+  
+  						<div id="tab1">
+ 		 					<div class="tabs-1-content">
+                                <a href="">Aliquam Turpis Leo</a>
+                                <a href="">Commandı Libero Lectus</a>
+                                <a href="">Est Lilyum Polar</a>
+                                <a href="">Mauris Malesuada Sed</a>
+                                <a href="">Urna Rhoncus</a>
+                                <a href="">Class Aptent Auque Litora</a>
+          					</div>
+   						</div> 
+  
+  						<div id="tab2">
+ 		 					<div class="tabs-1-content">
+                                <a href="">Aliquam Turpis Leos</a>
+                                <a href="">Commandı Libero Lectus</a>
+                                <a href="">Est Lilyum Polar</a>
+                                <a href="">Mauris Malesuada Sed</a>
+                                <a href="">Urna Rhoncus</a>
+                                <a href="">Class Aptent Auque Litora</a>
+          					</div>
+  						</div> 
+					</div> 
+ 
+					<script type="text/javascript"> 
+                      $("#usual1 ul").idTabs(); 
+                    </script>
+
+                </div> <!--/.cap-blog-area-->
+            </div><!-- /.bg-border -->
+                
+            <!--3-->
+            <div class="mrgn-t-45"></div>
+            <div class="bg-border">
+                <div class="cap-blog-area-r">
+                
+                	<div id="usual2" > 
+                  		<ul class="usual"> 
+                    		<li><a href="#tabs1" class="selected">Random Post</a></li> 
+                    		<li><a href="#tabs2">Comments</a></li> 
+                  		</ul> 
+                  
+                  		<div id="tabs1">
+                            <div class="tabs-post">
+                                <ul>
+                                    <li>
+                                        <img src="images/blog-image1.jpg" alt=""/>
+                                        <a href="">Mauris dui massa</a>
+                                        <span>Sed nulla pellentes...<br><em>28 Jan 2011</em></span>
+                                    </li>
+                                    <li>
+                                        <img src="images/blog-image1.jpg" alt="" />
+                                        <a href="">Mauris dui massa</a>
+                                        <span>Sed nulla pellentes...<br><em>28 Jan 2011</em></span>
+                                    </li>
+                                    <li>
+                                        <img src="images/blog-image1.jpg" alt="" />
+                                        <a href="">Mauris dui massa</a>
+                                        <span>Sed nulla pellentes...<br><em>28 Jan 2011</em></span>
+                                    </li>
+                                    <li>
+                                        <img src="images/blog-image1.jpg" alt=""/>
+                                        <a href="">Mauris dui massa</a>
+                                        <span>Sed nulla pellentes...<br><em>28 Jan 2011</em></span>
+                                    </li>
+                                </ul>
+                            </div>
+                    	</div> 
+                  
+                  		<div id="tabs2">
+                  			<div class="tabs-post">
+                                <ul>
+                                    <li>
+                                        <img src="images/blog-image1.jpg" alt=""/>
+                                        <a href="">Mauris dui massas</a>
+                                        <span>Sed nulla pellentes...<br><em>28 Jan 2011</em></span>
+                                    </li>
+                                    <li>
+                                        <img src="images/blog-image1.jpg" alt=""/>
+                                        <a href="">Mauris dui massa</a>
+                                        <span>Sed nulla pellentes...<br><em>28 Jan 2011</em></span>
+                                    </li>
+                                    <li>
+                                        <img src="images/blog-image1.jpg" alt=""/>
+                                        <a href="">Mauris dui massa</a>
+                                        <span>Sed nulla pellentes...<br><em>28 Jan 2011</em></span>
+                                    </li>
+                                    <li>
+                                        <img src="images/blog-image1.jpg" alt=""/>
+                                        <a href="">Mauris dui massa</a>
+                                        <span>Sed nulla pellentes...<br><em>28 Jan 2011</em></span>
+                                    </li>
+                                </ul>
+                			</div>
+                  		</div>  
+                  		<div class="clearfix"></div>
+                            <div class="tabs-button-l"><a href=""><img src="images/tabs-button-l.png" alt=""/></a></div>
+                            <div class="tabs-button-r"><a href=""><img src="images/tabs-button-r.png" alt=""/></a></div>
+                		</div> 
+                 
+						<script type="text/javascript"> 
+                          $("#usual2 ul").idTabs("tabs2"); 
+                        </script>
+                
+                </div> <!--/.cap-blog-area-->
+            </div><!-- /.bg-border -->
+        
+        	<!--4-->
+        	<div class="mrgn-t-45"></div>
+            <div class="bg-border-2">
+                <div class="cap-blog-area-r">
+                
+                	<div class="tabs-1-menu">
+                    	<a href="" class="first active">Populer Tags</a>
+               	 	</div>
+                	<div class="clearfix"></div>
+                	<div class="pop-tags">
+                        <a href="">Media</a>
+                        <a href="">PHP</a>
+                        <a href="">Photoshop</a>
+                        <a href="">Magazines</a>
+                        <a href="">Photos</a>
+                        <a href="">Multimedia</a>
+                        <a href="">CSS</a>
+                	</div>
+        
+                </div> <!--/.cap-blog-area-->
+            </div><!-- /.bg-border -->
+   		</div><!--/.three columns-->
+        
+        
+        <div class="nine columns">
+        
+            <!-- 1 -->
+            <div class="bg-border mrgn-t-45">
+                <div class="cap-blog-area">
+                	<div class="cap-blog-title">
+                        <h1><strong>27</strong> jan</h1>
+                        <h2>Pellentesque Aliquam Venenatis</h2>
+                    </div>
+                    <div class="small-slider">
+                        <div id="slider2">
+                            <div><img src="images/blog-image.jpg" alt="" ></div>
+                            <div><img src="images/blog-image-1.jpg" alt="" ></div>
+                            <div><img src="images/blog-image-2.jpg" alt="" ></div>
+                        </div>
+                    </div>
+                    
+                    <div class="clearfix"></div>
+                    
+                    <div class="blog-content-info">
+                    	<h3>143</h3>
+                        
+                        <div class="blog-comments">comments</div>
+                        
+                        <div class="blog-post-info">
+                        	<ul>
+                            	<li><a class="youtube has-tip" data-width="50" href="http://www.youtube.com/embed/GgR6dyzkKHI" title="Youtube"><img src="images/blog-post-icon1.png" alt="" ></a></li>
+                                <li><a class="group1 has-tip" data-width="50" href="images/bigpic.png" title="Picture"><img src="images/blog-post-icon2.png" alt="" ></a></li>
+                                <li><a class="iframe  has-tip" data-width="50" href="http://envato.com/" title="Iframe"><img src="images/blog-post-icon3.png" alt="" ></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p>
+                    Aliquam vel turpis leo, commodo tempor urna. Aenean aliquet libero quis lectus imperdiet id interdum mauris malesuada. 
+                    Cras semper, odio sed porttitor rutrum, est nisi commodo augue, eu aliquam nisl leo eleifend mauris. Sed id rhoncus urna. 
+                    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam commonda lilyum polar 
+                    ipsum ism simply dummy data a ipsum nibh, non scelerisque est.
+                    </p>
+                    <div class="cap_button"><a href="">More<span><img src="images/button_arrow.png" alt=""/></span></a></div>
+                </div> <!--/.cap-blog-area-->
+            </div><!-- /.bg-border -->
+            
+            <!-- 2 -->
+       		<div class="bg-border mrgn-t-45">
+                <div class="cap-blog-area">
+                	<div class="cap-blog-title">
+                        <h1><strong>27</strong> jan</h1>
+                        <h2>Pellentesque Aliquam Venenatis</h2>
+                    </div>
+                    
+                    <div class="small-slider">
+                        <div id="slider3">
+                            <div><img src="images/blog-image-1.jpg" alt="" ></div>
+                            <div><img src="images/blog-image-2.jpg" alt="" ></div>
+                            <div><img src="images/blog-image.jpg" alt="" ></div>
+                        </div>
+                    </div>
+                    
+                    <div class="clearfix"></div>
+                    
+                    <div class="blog-content-info">
+                    	<h3>143</h3>
+                        
+                        <div class="blog-comments">comments</div>
+                        
+                        <div class="blog-post-info">
+                        	<ul>
+                            	<li><a class="youtube has-tip" data-width="50" href="http://www.youtube.com/embed/GgR6dyzkKHI" title="Youtube"><img src="images/blog-post-icon1.png" alt="" ></a></li>
+                                <li><a class="group1 has-tip" data-width="50" href="images/bigpic.png" title="Picture"><img src="images/blog-post-icon2.png" alt="" ></a></li>
+                                <li><a class="iframe  has-tip" data-width="50" href="http://envato.com/" title="Iframe"><img src="images/blog-post-icon3.png" alt="" ></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p>
+                    Aliquam vel turpis leo, commodo tempor urna. Aenean aliquet libero quis lectus imperdiet id interdum mauris malesuada. 
+                    Cras semper, odio sed porttitor rutrum, est nisi commodo augue, eu aliquam nisl leo eleifend mauris. Sed id rhoncus urna. 
+                    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam commonda lilyum polar 
+                    ipsum ism simply dummy data a ipsum nibh, non scelerisque est.
+                    </p>
+                    <div class="cap_button"><a href="">More<span><img src="images/button_arrow.png" alt=""/></span></a></div>
+                </div> <!--/.cap-blog-area-->
+            </div><!-- /.bg-border -->
+            
+            <!-- 3 -->
+       		<div class="bg-border mrgn-t-45">
+                <div class="cap-blog-area">
+                	<div class="cap-blog-title">
+                        <h1><strong>27</strong> jan</h1>
+                        <h2>Pellentesque Aliquam Venenatis</h2>
+                    </div>
+                    
+                    <div class="small-slider">
+                        <div id="slider4">
+                            <div><img src="images/blog-image-2.jpg" alt="" ></div>
+                            <div><img src="images/blog-image.jpg" alt="" ></div>
+                            <div><img src="images/blog-image-1.jpg" alt="" ></div>
+                        </div>
+                    </div>
+                    
+                    <div class="clearfix"></div>
+                    
+                    <div class="blog-content-info">
+                    	<h3>143</h3>
+                        
+                        <div class="blog-comments">comments</div>
+                        
+                        <div class="blog-post-info">
+                        	<ul>
+                            	<li><a class="youtube has-tip" data-width="50" href="http://www.youtube.com/embed/GgR6dyzkKHI" title="Youtube"><img src="images/blog-post-icon1.png" alt="" ></a></li>
+                                <li><a class="group1 has-tip" data-width="50" href="images/bigpic.png" title="Picture"><img src="images/blog-post-icon2.png" alt="" ></a></li>
+                                <li><a class="iframe  has-tip" data-width="50" href="http://envato.com/" title="Iframe"><img src="images/blog-post-icon3.png" alt="" ></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p>
+                    Aliquam vel turpis leo, commodo tempor urna. Aenean aliquet libero quis lectus imperdiet id interdum mauris malesuada. 
+                    Cras semper, odio sed porttitor rutrum, est nisi commodo augue, eu aliquam nisl leo eleifend mauris. Sed id rhoncus urna. 
+                    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam commonda lilyum polar 
+                    ipsum ism simply dummy data a ipsum nibh, non scelerisque est.
+                    </p>
+                    <div class="cap_button"><a href="">More<span><img src="images/button_arrow.png" alt=""/></span></a></div>
+                </div> <!--/.cap-blog-area-->
+            </div><!-- /.bg-border -->
+            
+   		</div><!--/.nine columns-->
+        
+    </div><!--/.row-->
+   
+    <div class="mrgn-t-45"></div>
+    	<div class="row">
+    		<div class="three columns offset-by-ten">
+            	<div class="blog-page-navi">
+                	<a href="">1</a>
+                    <a href="">2</a>
+                    <a href="">3</a>
+                    <a href=""><img src="images/blog-page-navi.png" alt=""/></a>
+                </div><!--/.blog-page-navi-->
+            </div><!--/.three columns-->
+    	</div><!--/.row-->
+    
+    
+      <!-- FOOTER 3 AREA COLUMNS -->
+	<div class="mrgn-t-45"></div>
+    <div class="row">
+    		
+            <!--#1-->
+            <div class="four columns">
+                <div class="first-columns">
+                   <h4>Company About Us</h4><br />
+                   <p>Sed nulla justo, <b>fermentum</b> nec ultri cies aenea, ornare vel turpis.
+                    Prae sent rhoncus Fusce ullamcorper et sodales in, venenatis ac turpis. </p>
+                   <p><b>Mauris dui massa,</b> pellentesque eget laoreet quis, semper sed risus.
+                    Ves tibulum fermentum massa vel magna laoreet lorem tempus.</p>
+                </div>
+                <div class="cap_button"><a href="">All<span><img src="images/button_arrow2.png" alt=""/></span></a></div>
+            </div> <!-- /.four centered -->
+            
+            <!--#2-->
+            <div class="four columns">
+                <div class="second-columns">
+                    <h4>Blog Categories</h4><br />
+                    <ul>
+                        <li><img src="images/12/blog-icon.png" alt=""/><a href="">Sed nulla justo pellentesque eget</a></li>
+                        <li><img src="images/12/blog-icon.png" alt=""/><a href="">Fermentum massa vel manga</a></li>
+                        <li><img src="images/12/blog-icon.png" alt=""/><a href="">Quisque bibendum commodo aliquam</a></li>
+                        <li><img src="images/12/blog-icon.png" alt=""/><a href="">Phasellus laoreat viverra</a></li>
+                    </ul>
+                </div>
+                <div class="cap_button"><a href="">All<span><img src="images/button_arrow3.png" alt=""/></span></a></div>
+            </div> <!-- /.four centered -->
+            
+            <!--#3-->
+            <div class="four columns">
+                <div class="third-columns">
+                    <h4>Latest Blog Posts</h4><br />
+                    <ul>
+                        <li>
+                        	<img src="images/blog-image1.jpg" alt=""/>
+                            <a href=""><div class="has-tip tip-top noradius" data-width="210" title="I'm on the top and I'm not rounded!"><h6>Mauris Dui Massa</h6></div></a>
+                            <p class="">Sed nulla justo pellentesque eget <br /> <span>28 Jan 2011</span></p>
+                        </li>
+                        <li>
+                            <img src="images/blog-image2.jpg" alt=""/><a href=""><div class="has-tip tip-top noradius" data-width="210" title="I'm on the top and I'm not rounded!"><h6>Mauris Dui Massa</h6></div></a>
+                            <p class="">Sed nulla justo pellentesque eget <br /> <span>28 Jan 2011</span></p>
+                            
+                        </li>
+                   </ul> 
+                </div>
+                <div class="cap_button"><a href="">All<span><img src="images/button_arrow3.png" alt=""/></span></a></div>
+            </div> <!-- /.four centered -->
+    </div> <!-- /.row -->
+    
+    
+    <!-- FOOTER -->
+    <div class="mrgn-t-45"></div>
+    <div class="row cap-footer">
+    	<div class="pddng-16">
+       
+            <span class="ff-copse italic">
+            	Copright © 2012 Capadocia Themes <a href="#">imtheme.net</a>. All rights reserved.
+            </span>
+        	
+            <div class="cap-footer-logo">
+            	<img class="has-tip tip-left noradius" data-width="100" title="logo" src="images/footer-logo.png" alt="" />
+            </div>
+          
+        </div> <!-- /.pddng-16 -->
+    </div> <!-- /.row cap-footer -->
+    <div class="row">
+                <div class="menu_hr"></div>	
+    </div> <!-- /.row -->
+</div> <!-- /.container -->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

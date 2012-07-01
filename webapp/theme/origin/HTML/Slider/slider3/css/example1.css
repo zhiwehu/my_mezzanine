@@ -1,0 +1,187 @@
+#slider11{   
+	position: absolute;   
+}     
+
+.oneByOne1{
+	margin: 0;
+	width: 1064px;
+	height: 420px;      
+	position: relative;
+	overflow: hidden; 
+
+} 
+
+#slider11 .oneByOne_item{
+	position: absolute;
+	width: 1064px;
+	height: 420px;  
+	overflow: hidden;  
+}         
+                      
+#slider11 .oneByOne_item span{
+	font-family: helvetica, sans-serif;
+}                                                                                              
+
+#slider11 .oneByOne_item a{
+	text-decoration: none;
+	color: #B22222;
+}
+              
+
+
+#slider11 .oneByOne_item span.slide2Txt1{ 
+  	position: relative;
+	float: left;
+	margin: 120px 12px 0 120px;
+	background: #313131;     
+	padding: 20px;
+	color: #FFFFFF;
+	font-size: 30px;
+	font-family: 'Cabin Condensed', sans-serif; font-weight:600; text-shadow: 0px 2px 0px #112515;
+filter: dropshadow(color=#112515, offx=0, offy=2);             
+}
+ 
+#slider11 .oneByOne_item span.slide2Txt2{ 
+  	position: relative;
+	clear: left;
+	float: left;
+	margin: 0px 12px 0 120px;
+	
+	font-family: 'Cabin Condensed', sans-serif; font-weight:600; text-shadow: 0px 2px 0px #fff;
+	filter: dropshadow(color=#fff, offx=0, offy=2);
+	color: #797979;  
+	background: #e5e5e5;
+	padding: 20px;
+	font-size: 22px;             
+}   
+
+#slider11 .oneByOne_item span.slide2Txt3{ 
+  	position: relative;
+	clear: left;
+	float: left;
+	margin: 6px 12px 0 120px;
+	color: #666666;	
+	font-size: 12px;  
+	background: #FFFFFF;
+	padding: 8px;             
+}     
+                    
+  
+
+#slider11 img.wp1_1{
+	position: absolute;
+	top: 255px;
+	left: 512px;
+}
+#slider11 img.wp1_2{
+	position: absolute;
+	top: 190px;
+	left: 360px;
+}              
+#slider11 img.wp1_3{
+	position: absolute;
+	top: -40px;
+	left: 80px;
+}   
+
+#slider11 .oneByOne_item span.txt1{
+	clear: left;
+	position: relative;
+	float: left;
+	margin: 120px 12px 0 580px;    
+	background: #313131;     
+	padding: 20px;
+	color: #FFFFFF;
+	font-size: 30px;
+	font-family: 'Cabin Condensed', sans-serif; font-weight:600; text-shadow: 0px 2px 0px #112515;
+filter: dropshadow(color=#112515, offx=0, offy=2);
+} 
+#slider11 .oneByOne_item  span.txt1 a{
+	color: #FFFFFF;
+}         
+#slider11 .oneByOne_item span.txt2{
+	font-family: 'Cabin Condensed', sans-serif; font-weight:600; text-shadow: 0px 2px 0px #fff;
+filter: dropshadow(color=#fff, offx=0, offy=2);
+	clear: left;
+	position: relative;
+	float: left;
+	margin: 0px 12px 0 580px;
+	color: #797979;  
+	background: #e5e5e5;
+	padding: 20px;
+	font-size: 22px;
+}                   
+    
+
+ 
+#slider11 img.wp1{
+	position: absolute;
+	top: 240px;
+	left: 380px;
+}
+#slider11 img.wp2{
+	position: absolute;
+	top: 200px;
+	left: 470px;
+}              
+#slider11 img.wp3{
+	position: absolute;
+	top: 60px;
+	left: 600px;
+}   
+
+#slider11 .oneByOne_item span.wp1{
+	clear: left;
+	position: relative;
+	float: left;
+	margin: 120px 12px 0 120px;    
+	background: #313131;     
+	padding: 20px;
+	color: #FFFFFF;
+	font-size: 30px;
+	font-family: 'Cabin Condensed', sans-serif; font-weight:600; text-shadow: 0px 2px 0px #112515;
+filter: dropshadow(color=#112515, offx=0, offy=2);
+} 
+#slider11 .oneByOne_item span.wp1 a{
+	color: #FFFFFF;
+}         
+#slider11 .oneByOne_item span.wp2{
+	clear: left;
+	position: relative;
+	float: left;
+	margin: 0px 12px 0 120px; 
+	font-family: 'Cabin Condensed', sans-serif; font-weight:600; text-shadow: 0px 2px 0px #fff;
+filter: dropshadow(color=#fff, offx=0, offy=2);
+	color: #797979;  
+	background: #e5e5e5;
+	padding: 20px;
+	font-size: 22px;
+}                  
+
+#slider11 .oneByOne_item img.bigImage{ 
+	position: absolute;
+	top: 0; 
+	left: 0;
+
+}
+
+#slider11 .oneByOne_item span.slide5Txt1{ 
+  	position: relative;
+	float: left;
+	margin: 150px 12px 0 600px;
+	color: #9ACD32;	
+	font-size: 24px;  
+	background: #FFFFFF;
+	padding: 8px;             
+}
+ 
+#slider11 .oneByOne_item span.slide5Txt2{ 
+  	position: relative;
+	clear: left;
+	float: left;
+	margin: 12px 12px 0 600px;
+	color: #666666;	
+	font-size: 12px;  
+	background: #FFFFFF;
+	padding: 8px;             
+}  
