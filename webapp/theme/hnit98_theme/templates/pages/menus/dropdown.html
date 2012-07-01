@@ -3,16 +3,16 @@
 {% if page_branch_in_navigation %}
 
 {% if branch_level == 0 %}
-<ul class="nav pull-right">
+<ul class="menu">
     {% for page in page_branch %}
     {% if page.is_primary and forloop.first %}
-    <li class="{% if on_home %} active{% endif %}" id="dropdown-menu-{{ page.html_id }}">
+    <li class="{% if on_home %} active_menu{% endif %}" id="dropdown-menu-{{ page.html_id }}">
         <a href="{% url home %}">{% trans "Home" %}</a>
     </li>
     <li class="divider-vertical"></li>
     {% endif %}
     {% if page.in_navigation %}
-    <li class="dropdown{% if page.is_current_or_ascendant %} active{% endif %}"
+    <li class="dropdown{% if page.is_current_or_ascendant %} active_menu{% endif %}"
         id="dropdown-menu-{{ page.html_id }}">
         <a href="{{ page.get_absolute_url }}">
             {{ page.title }}
@@ -29,7 +29,7 @@
 {% if branch_level == 1 %}
 <ul class="dropdown-menu">
     {% for page in page_branch %}
-    <li{% if page.is_current_or_ascendant %} class="active"{% endif %}
+    <li{% if page.is_current_or_ascendant %} class="active_menu"{% endif %}
         id="dropdown-menu-{{ page.html_id }}">
         <a href="{{ page.get_absolute_url }}">{{ page.title }}</a>
     </li>
