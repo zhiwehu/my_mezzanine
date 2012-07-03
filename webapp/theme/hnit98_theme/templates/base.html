@@ -106,8 +106,8 @@
     <div class="plus">
         <h4>Why Support Us?</h4>
         <p><b>Mauris dui massa,</b> pellentesque eget laoreet quis, semper sed risus. Ves tibulum fermentum massa vel magna laoreet lorem ipsum is simply dummy data tempus.</p>
-        <div class="cap_button"><a href="">All<span><img src="images/button_arrow23.png" alt=""/></span></a></div>
-        <div class="cap_button"><a href="">All<span><img src="images/button_arrow2.png" alt=""/></span></a></div>
+        <div class="cap_button"><a href="">All<span><img src="{{ STATIC_URL }}theme/images/button_arrow23.png" alt=""/></span></a></div>
+        <div class="cap_button"><a href="">All<span><img src="{{ STATIC_URL }}theme/images/button_arrow2.png" alt=""/></span></a></div>
     </div>
     <a href="#" class="plus-button" title=""></a>
 </div>
@@ -138,7 +138,7 @@
     {% if settings.SITE_TAGLINE %}<p class="tagline">{{ settings.SITE_TAGLINE }}</p>{% endif %}
     -->
     <div class="tree columns">
-        <img src="images/logo.png" width="197" height="60" alt="" />
+        <img src="{{ STATIC_URL }}theme/images/logo.png" width="197" height="60" alt="" />
     </div><!--/.tree columns-->
 
     <div class="one columns">
@@ -152,9 +152,9 @@
     <div class="tree columns">
         <div class="cap-social">
             <ul>
-                <li><a class="has-tip" data-width="60" title="Facebook" href=""><img src="images/facebook_icon.png" alt=""  /></a></li>
-                <li><a class="has-tip" data-width="60" title="Twitter" href=""><img src="images/twitter_icon.png" alt=""  /></a></li>
-                <li><a class="has-tip" data-width="60" title="Apple" href=""><img src="images/apple_icon.png" alt=""  /></a></li>
+                <li><a class="has-tip" data-width="60" title="Facebook" href=""><img src="{{ STATIC_URL }}theme/images/facebook_icon.png" alt=""  /></a></li>
+                <li><a class="has-tip" data-width="60" title="Twitter" href=""><img src="{{ STATIC_URL }}theme/images/twitter_icon.png" alt=""  /></a></li>
+                <li><a class="has-tip" data-width="60" title="Apple" href=""><img src="{{ STATIC_URL }}theme/images/apple_icon.png" alt=""  /></a></li>
             </ul>
         </div><!--/.cap-social-->
     </div><!--/.tree columns-->
@@ -181,145 +181,8 @@
 <!-- AREA 2 -->
 <div class="row">
 
-<div class="nine columns">
+    {% block main %}{% endblock %}
 
-    <!-- 1 -->
-    <div class="bg-border mrgn-t-45">
-        <div class="cap-blog-area">
-            <div class="cap-blog-read">
-
-                {% block main %}{% endblock %}
-
-            </div><!--/.cap-blog-read-->
-        </div> <!--/.cap-blog-area-->
-    </div><!-- /.bg-border -->
-
-
-</div><!--/.nine columns-->
-
-<div class="three columns">
-
-    <!--1-->
-    <div class="mrgn-t-45"></div>
-    <div class="bg-border">
-        <div class="cap-blog-area-r">
-            <div class="blog-read-desc">
-                    	<span>
-                        	<img src="images/user1.png" alt=""/>
-                            <br><em>CEO</em><br><em><b>IAMILKAY</b></em>
-                        </span>
-
-                <h5>DESCRIPTION:</h5>
-                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form..
-                </p>
-            </div>
-        </div> <!--/.cap-blog-area-->
-    </div><!-- /.bg-border -->
-
-    <!--2-->
-    <div class="mrgn-t-45"></div>
-    <div class="bg-border-2">
-        <div class="cap-blog-area-r">
-
-            <div class="tabs-1-menu">
-                <a href="" class="first active">Post Tags</a>
-            </div>
-            <div class="clearfix"></div>
-            <div class="pop-tags">
-                <a href="">Media</a>
-                <a href="">PHP</a>
-                <a href="">Photoshop</a>
-                <a href="">Magazines</a>
-                <a href="">Photos</a>
-                <a href="">Multimedia</a>
-                <a href="">CSS</a>
-            </div>
-
-        </div> <!--/.cap-blog-area-->
-    </div><!-- /.bg-border -->
-
-    <!--3-->
-    <div class="mrgn-t-45"></div>
-    <div class="bg-border">
-        <div class="cap-blog-area-r">
-            <div id="usual2" >
-                <ul class="usual">
-                    <li><a href="#tabs1" class="selected">Random Post</a></li>
-                    <li><a href="#tabs2">Comments</a></li>
-                </ul>
-
-                <div id="tabs1">
-
-                    <div class="tabs-post">
-                        <ul>
-                            <li>
-                                <img src="images/blog-image1.jpg" alt=""/>
-                                <a href="">Mauris dui massa</a>
-                                <span>Sed nulla pellentes...<br><em>28 Jan 2011</em></span>
-                            </li>
-                            <li>
-                                <img src="images/blog-image1.jpg" alt=""/>
-                                <a href="">Mauris dui massa</a>
-                                <span>Sed nulla pellentes...<br><em>28 Jan 2011</em></span>
-                            </li>
-                            <li>
-                                <img src="images/blog-image1.jpg" alt="">
-                                <a href="">Mauris dui massa</a>
-                                <span>Sed nulla pellentes...<br><em>28 Jan 2011</em></span>
-                            </li>
-                            <li>
-                                <img src="images/blog-image1.jpg" alt="">
-                                <a href="">Mauris dui massa</a>
-                                <span>Sed nulla pellentes...<br><em>28 Jan 2011</em></span>
-                            </li>
-                        </ul>
-
-                    </div>
-
-                </div>
-                <div id="tabs2">
-
-                    <div class="tabs-post">
-                        <ul>
-                            <li>
-                                <img src="images/blog-image1.jpg" alt=""/>
-                                <a href="">Mauris dui massas</a>
-                                <span>Sed nulla pellentes...<br><em>28 Jan 2011</em></span>
-                            </li>
-                            <li>
-                                <img src="images/blog-image1.jpg" alt="">
-                                <a href="">Mauris dui massa</a>
-                                <span>Sed nulla pellentes...<br><em>28 Jan 2011</em></span>
-                            </li>
-                            <li>
-                                <img src="images/blog-image1.jpg" alt="">
-                                <a href="">Mauris dui massa</a>
-                                <span>Sed nulla pellentes...<br><em>28 Jan 2011</em></span>
-                            </li>
-                            <li>
-                                <img src="images/blog-image1.jpg" alt="">
-                                <a href="">Mauris dui massa</a>
-                                <span>Sed nulla pellentes...<br><em>28 Jan 2011</em></span>
-                            </li>
-                        </ul>
-
-                    </div>
-
-
-                </div>
-                <div class="clearfix"></div>
-                <div class="tabs-button-l"><a href=""><img src="images/tabs-button-l.png" alt=""></a></div>
-                <div class="tabs-button-r"><a href=""><img src="images/tabs-button-r.png" alt=""></a></div>
-            </div>
-
-            <script type="text/javascript">
-                $("#usual2 ul").idTabs("tabs2");
-            </script>
-
-            <!--/.tabs-post-->
-        </div> <!--/.cap-blog-area-->
-    </div><!-- /.bg-border -->
-</div>
 </div><!--/.row-->
 
 <!-- FOOTER 3 AREA COLUMNS -->
@@ -335,7 +198,7 @@
             <p><b>Mauris dui massa,</b> pellentesque eget laoreet quis, semper sed risus.
                 Ves tibulum fermentum massa vel magna laoreet lorem tempus.</p>
         </div>
-        <div class="cap_button"><a href="">All<span><img src="images/button_arrow2.png" alt=""/></span></a></div>
+        <div class="cap_button"><a href="">All<span><img src="{{ STATIC_URL }}theme/images/button_arrow2.png" alt=""/></span></a></div>
     </div> <!-- /.four centered -->
 
     <!--#2-->
@@ -343,13 +206,13 @@
         <div class="second-columns">
             <h4>Blog Categories</h4><br />
             <ul>
-                <li><img src="images/12/blog-icon.png" alt=""/><a href="">Sed nulla justo pellentesque eget</a></li>
-                <li><img src="images/12/blog-icon.png" alt=""/><a href="">Fermentum massa vel manga</a></li>
-                <li><img src="images/12/blog-icon.png" alt=""/><a href="">Quisque bibendum commodo aliquam</a></li>
-                <li><img src="images/12/blog-icon.png" alt=""/><a href="">Phasellus laoreat viverra</a></li>
+                <li><img src="{{ STATIC_URL }}theme/images/12/blog-icon.png" alt=""/><a href="">Sed nulla justo pellentesque eget</a></li>
+                <li><img src="{{ STATIC_URL }}theme/images/12/blog-icon.png" alt=""/><a href="">Fermentum massa vel manga</a></li>
+                <li><img src="{{ STATIC_URL }}theme/images/12/blog-icon.png" alt=""/><a href="">Quisque bibendum commodo aliquam</a></li>
+                <li><img src="{{ STATIC_URL }}theme/images/12/blog-icon.png" alt=""/><a href="">Phasellus laoreat viverra</a></li>
             </ul>
         </div>
-        <div class="cap_button"><a href="">All<span><img src="images/button_arrow3.png" alt=""/></span></a></div>
+        <div class="cap_button"><a href="">All<span><img src="{{ STATIC_URL }}theme/images/button_arrow3.png" alt=""/></span></a></div>
     </div> <!-- /.four centered -->
 
     <!--#3-->
@@ -358,18 +221,18 @@
             <h4>Latest Blog Posts</h4><br />
             <ul>
                 <li>
-                    <img src="images/blog-image1.jpg" alt=""/>
+                    <img src="{{ STATIC_URL }}theme/images/blog-image1.jpg" alt=""/>
                     <a href=""><div class="has-tip tip-top noradius" data-width="210" title="I'm on the top and I'm not rounded!"><h6>Mauris Dui Massa</h6></div></a>
                     <p class="">Sed nulla justo pellentesque eget <br /> <span>28 Jan 2011</span></p>
                 </li>
                 <li>
-                    <img src="images/blog-image2.jpg" alt=""/><a href=""><div class="has-tip tip-top noradius" data-width="210" title="I'm on the top and I'm not rounded!"><h6>Mauris Dui Massa</h6></div></a>
+                    <img src="{{ STATIC_URL }}theme/images/blog-image2.jpg" alt=""/><a href=""><div class="has-tip tip-top noradius" data-width="210" title="I'm on the top and I'm not rounded!"><h6>Mauris Dui Massa</h6></div></a>
                     <p class="">Sed nulla justo pellentesque eget <br /> <span>28 Jan 2011</span></p>
 
                 </li>
             </ul>
         </div>
-        <div class="cap_button"><a href="">All<span><img src="images/button_arrow3.png" alt=""/></span></a></div>
+        <div class="cap_button"><a href="">All<span><img src="{{ STATIC_URL }}theme/images/button_arrow3.png" alt=""/></span></a></div>
     </div> <!-- /.four centered -->
 </div> <!-- /.row -->
 
@@ -384,7 +247,7 @@
             </span>
 
         <div class="cap-footer-logo">
-            <img class="has-tip tip-left noradius" data-width="100" title="logo" src="images/footer-logo.png" alt="" />
+            <img class="has-tip tip-left noradius" data-width="100" title="logo" src="{{ STATIC_URL }}theme/images/footer-logo.png" alt="" />
         </div>
 
     </div> <!-- /.pddng-16 -->
